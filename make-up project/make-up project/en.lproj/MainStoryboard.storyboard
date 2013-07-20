@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ps0-AC-IyK">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - 美妆馆-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="SRRViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s2X-d8-Syc">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="特价.png" translatesAutoresizingMaskIntoConstraints="NO" id="6K1-Yk-V8b"/>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="6K1-Yk-V8b" firstAttribute="trailing" secondItem="s2X-d8-Syc" secondAttribute="trailing" type="default" id="PGG-UU-zco"/>
+                                    <constraint firstItem="6K1-Yk-V8b" firstAttribute="bottom" secondItem="s2X-d8-Syc" secondAttribute="bottom" type="default" id="Shd-uD-jaO"/>
+                                    <constraint firstItem="6K1-Yk-V8b" firstAttribute="leading" secondItem="s2X-d8-Syc" secondAttribute="leading" type="default" id="mQv-4j-7z3"/>
+                                    <constraint firstItem="6K1-Yk-V8b" firstAttribute="top" secondItem="s2X-d8-Syc" secondAttribute="top" type="default" id="olM-89-icc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="s2X-d8-Syc" secondAttribute="bottom" constant="312" id="MqI-W8-oeg"/>
+                            <constraint firstItem="s2X-d8-Syc" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="QZh-C5-bRc"/>
+                            <constraint firstItem="s2X-d8-Syc" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="TCP-YH-GGd"/>
+                            <constraint firstItem="s2X-d8-Syc" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="XxG-0m-Bdx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="美妆馆" id="HDN-Bz-N73"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="-244"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JUZ-CC-iQH">
+            <objects>
+                <viewController id="SCG-A9-Ru4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7fP-Lh-dlC">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OOz-BE-qet"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gsn-O1-tYv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1330" y="-244"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pKw-ic-ugK">
+            <objects>
+                <navigationController id="Ps0-AC-IyK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y75-yu-CSV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="t8T-Yf-tUx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9a6-zN-adx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="577" y="-250"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="特价.png" width="783" height="390"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SRRViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SRRViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="titleImgTap" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="titlehotTap" candidateClass="UITapGestureRecognizer"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
